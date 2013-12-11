@@ -1,0 +1,28 @@
+{
+  "name": "request-cookies",
+  "version": "0.0.1",
+  "description": "Cookie management for the node request libary",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lalitkapoor/request-cookies"
+  },
+  "dependencies": {
+    "tough-cookie": "0.9.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": "",
+  "keywords": [
+    "request",
+    "cookie",
+    "cookies",
+    "cookie",
+    "jar",
+    "cookie-jar"
+  ],
+  "author": "Lalit Kapoor <lalitkapoor@gmail.com>",
+  "license": "MIT"
+}
