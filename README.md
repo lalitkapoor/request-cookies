@@ -1,4 +1,4 @@
-request-cookie-jar
+request-cookies
 ==================
 
-Cookie jar for node's request library
+Cookie management for node's request library
