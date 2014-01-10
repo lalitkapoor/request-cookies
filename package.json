@@ -3,18 +3,17 @@
   "version": "0.0.1",
   "description": "Cookie management for the node request libary",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lalitkapoor/request-cookies"
-  },
+  "repository": "",
   "dependencies": {
     "tough-cookie": "0.9.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "should": "2.1.x",
+    "mocha": "1.17.x"
+  },
   "scripts": {
     "test": "mocha test"
   },
-  "repository": "",
   "keywords": [
     "request",
     "cookie",
