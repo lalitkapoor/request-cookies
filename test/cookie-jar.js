@@ -56,12 +56,4 @@ describe('CookieJar', function() {
       });
     });
   });
-
-  // describe('toJSON', function() {
-  //   it("should output a json representation", function(){
-  //     var c = new cookies.Cookie('foo=bar');
-  //     assert(c.toJSON().key === 'foo');
-  //     assert(c.toJSON().value === 'bar');
-  //   });
-  // });
 });
