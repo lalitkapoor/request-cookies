@@ -51,9 +51,9 @@ describe('CookieJar', function() {
       var jar = new cookies.CookieJar();
       jar.add('foo=bar', url);
 
-      var instances = jar.getCookies(url);
-      assert(instances.length === 1);
-      assert(instances[0].getCookieHeaderString() === 'foo=bar');
+      var matchingCookies = jar.getCookies(url);
+      assert(matchingCookies.length === 1);
+      assert(matchingCookies[0].getCookieHeaderString() === 'foo=bar');
     });
   });
 });
