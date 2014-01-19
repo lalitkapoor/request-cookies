@@ -19,7 +19,7 @@ Add a cookie to the cookie jar
 
 ### Params:
 
-* **String|Object** *data* can be a Cookie|json object or a set-cookie
+* **String|Object** *data* can be a Cookie, json object, or a set-cookie header string
 
 * **String** *url*
 
