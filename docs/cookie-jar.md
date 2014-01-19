@@ -1,18 +1,17 @@
-add(data, url, \[options\])
----------------------------
+add(data, url, options)
+-----------------------
 Add a cookie to the cookie jar
-header string
+
 
 
 **Parameters**
 
-**data**:  *String|Object*,  can be a Cookie|json object or a set-cookie
+**data**:  *String|Object*,  can be a Cookie|json object or a set-cookie header string
 
-**url**:  *String*,  
+**url**:  *String*,
 
 
-**[options]**:  *Object*,  
-
+**options**:  *Object*,  [optional]
 
 remove(url, key)
 ----------------
@@ -25,37 +24,35 @@ that for the path param when appropriate.
 
 **Parameters**
 
-**url**:  *String*,  
+**url**:  *String*,
 
 
-**key**:  *String*,  
+**key**:  *String*,
 
 
-getCookies(url, \[options\])
-----------------------------
+getCookies(url, options)
+------------------------
 Get cookies that match the given properties
 
 
 **Parameters**
 
-**url**:  *String*,  
+**url**:  *String*,
 
 
-**[options]**:  *Object*,  
+**options**:  *Object*,  [optional]
 
-
-getCookieHeaderString(url, \[options\])
----------------------------------------
+getCookieHeaderString(url, options)
+-----------------------------------
 Get HTTP Cookie header string
 
 
 **Parameters**
 
-**url**:  *String*,  
+**url**:  *String*,
 
 
-**[options]**:  *Object*,  
-
+**options**:  *Object*,  [optional]
 
 toJSON()
 --------
