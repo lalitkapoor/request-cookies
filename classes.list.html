@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Documentation Source: cookie.js</title>
+	<title>Documentation Classes</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,128 +47,93 @@
 	<div class="row-fluid">
 
 		
-			<div class="span12">
-				
+		<div class="span8">
+			
 				<div id="main">
 					
 
 
-		<h1 class="page-title">Source: cookie.js</h1>
+	<h1 class="page-title">Classes</h1>
+<section>
+
+<header>
+    <h2>
     
-    <section>
-        <article>
-            <pre class="sunlight-highlight-javascript ">var tc = require('tough-cookie');
+    </h2>
+    
+</header>
 
-var noop = function(){};
+<article>
+    <div class="container-overview">
+    
 
-var modifiable = [
-  'key'
-, 'value'
-, 'expires'
-, 'maxAge'
-, 'domain'
-, 'path'
-, 'secure'
-, 'httpOnly'
-, 'extensions'
-];
+    
+        
 
-var readOnly = [
-  'hostOnly'
-, 'creation'
-, 'lastAccessed'
-, 'pathIsDefault'
-];
+        
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
-/**
- * HTTP Cookie
- * @constructor
- * @param {String|Object} data can be a cookie header string or a json object
- */
-var Cookie = function(data) {
-  var self = this;
-  this._cookie = new tc.Cookie();
+        
+    
+    </div>
 
-  modifiable.map(function(attribute) {
-    Object.defineProperty(self, attribute, {
-    enumerable: true
-    , get: function() {
-        return self._cookie[attribute];
-      }
-    , set: function(val) {
-        self._cookie[attribute] = val;
-      }
-    });
-  });
+    
 
-  readOnly.map(function(attribute) {
-    Object.defineProperty(self, attribute, {
-      get: function(){
-        return this._cookie[attribute];
-      }
-    , set: noop
-    , enumerable: true
-    });
-  });
+    
 
-  this.set(data);
-};
+    
 
-/**
- * Get cookie as a cookie header string
- * @return {String}
- */
-Cookie.prototype.getCookieHeaderString = function() {
-  return this._cookie.cookieString();
-};
+    
+        <h3 class="subsection-title">Classes</h3>
 
-/**
- * Set multiple cookie properties at once
- * @param {String|Object} data
- */
-Cookie.prototype.set = function(data) {
-  if (!data) return;
+        <dl>
+            <dt><a href="Cookie.html">Cookie</a></dt>
+            <dd></dd>
+        
+            <dt><a href="CookieJar.html">CookieJar</a></dt>
+            <dd></dd>
+        </dl>
+    
 
-  if (typeof data === 'string') {
-    this._cookie = tc.Cookie.parse(data);
-    return;
-  }
+    
 
-  if (typeof data === 'object') {
-    for (key in data) {
-      if (!data.hasOwnProperty(key)) continue;
-      if (modifiable.indexOf(key) &lt; 0) continue;
-      this[key] = data[key];
-    }
-    return;
-  }
+    
 
-  throw Error("data parameter must be string or object.");
-};
+    
 
-/**
- * Get cookie as a JSON object
- * @return {Object}
- */
-Cookie.prototype.toJSON = function() {
-  return {
-    key: this.key
-  , value: this.value
-  , expires: this.expires
-  , maxAge: this.maxAge
-  , domain: this.domain
-  , path: this.path
-  , secure: this.secure
-  , httpOnly: this.httpOnly
-  , extensions: this.extensions
-  };
-};
+    
 
-module.exports = Cookie;</pre>
-        </article>
-    </section>
+    
+</article>
 
+</section>
 
 
 
@@ -186,6 +151,10 @@ module.exports = Cookie;</pre>
 				</footer>
 			</div>
 
+			
+			<div class="span3">
+				<div id="toc"></div>
+			</div>
 			
 			<br clear="both">
 		</div>
