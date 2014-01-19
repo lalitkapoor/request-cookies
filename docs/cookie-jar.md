@@ -1,34 +1,3 @@
-request-cookies
-==================
-
-Cookie management for node's request library
-
-see tests for examples
-
-#Cookie
-
-getCookieHeaderString()
------------------------
-Get cookie as a cookie header string
-
-
-set(data)
----------
-Set multiple cookie properties at once
-
-
-**Parameters**
-
-**data**:  *String|Object*,
-
-
-toJSON()
---------
-Get cookie as a JSON object
-
-
-#CookieJar
-
 add(data, url, \[options\])
 ---------------------------
 Add a cookie to the cookie jar
@@ -39,10 +8,10 @@ header string
 
 **data**:  *String|Object*,  can be a Cookie|json object or a set-cookie
 
-**url**:  *String*,
+**url**:  *String*,  
 
 
-**[options]**:  *Object*,
+**[options]**:  *Object*,  
 
 
 remove(url, key)
@@ -56,10 +25,10 @@ that for the path param when appropriate.
 
 **Parameters**
 
-**url**:  *String*,
+**url**:  *String*,  
 
 
-**key**:  *String*,
+**key**:  *String*,  
 
 
 getCookies(url, \[options\])
@@ -69,10 +38,10 @@ Get cookies that match the given properties
 
 **Parameters**
 
-**url**:  *String*,
+**url**:  *String*,  
 
 
-**[options]**:  *Object*,
+**[options]**:  *Object*,  
 
 
 getCookieHeaderString(url, \[options\])
@@ -82,12 +51,14 @@ Get HTTP Cookie header string
 
 **Parameters**
 
-**url**:  *String*,
+**url**:  *String*,  
 
 
-**[options]**:  *Object*,
+**[options]**:  *Object*,  
 
 
 toJSON()
 --------
 Get cookie jar as a JSON object
+
+

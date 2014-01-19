@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "should": "2.1.x",
-    "mocha": "1.17.x"
+    "mocha": "1.17.x",
+    "jsdox": "0.2.x"
   },
   "scripts": {
     "test": "mocha test"
