@@ -1,9 +1,10 @@
-request-cookies
+request-cookies [![Build Status](https://travis-ci.org/lalitkapoor/request-cookies.png?branch=master)](https://travis-ci.org/lalitkapoor/request-cookies)
 ==================
 
 Cookie management for node's request library
 
 see tests for examples
+
 
 <!-- Start lib/cookie-jar.js -->
 
