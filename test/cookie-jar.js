@@ -5,6 +5,19 @@ var url = 'http://www.example.com';
 
 // these are simple tests
 describe('CookieJar', function() {
+  describe('create', function() {
+    it("from the exported data of another jar", function(){
+      var jar1 = new cookies.CookieJar();
+      var c = new cookies.Cookie('foo=bar');
+      jar1.add(c, url);
+      var jarData = jar1.toJSON();
+
+      var jar2 = new cookies.CookieJar(jarData);
+      var header = jar2.getCookieHeaderString(url)
+      assert(header === 'foo=bar');
+    });
+  });
+
   describe('add', function() {
     it("using a Cookie object", function(){
       var jar = new cookies.CookieJar();
